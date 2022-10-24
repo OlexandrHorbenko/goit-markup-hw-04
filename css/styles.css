@@ -27,6 +27,7 @@ body {
   --ramka-top: #ececec;
   --border-color: #afb1b8;
   --footer-icon: rgba(255, 255, 255, 0.1);
+  --slogan-bg: #c4c4c4;
 }
 
 p,
@@ -156,6 +157,7 @@ img {
 
 .tel-icon {
   margin-right: 10px;
+  fill: var(--maine_color);
 }
 
 .header-mail {
@@ -177,6 +179,7 @@ img {
 
 .mail-icon {
   margin-right: 10px;
+  fill: var(--maine_color);
 }
 
 .header-mail:hover .mail-icon,
@@ -188,7 +191,7 @@ img {
 /*!!!!!!!!!!! SECTION-1!!!!!!!!!! */
 
 .slogan {
-  background-color: var(--gray-background);
+  background-color: var(--slogan-bg);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -203,6 +206,7 @@ img {
   padding-bottom: 200px;
   min-height: 600px;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .slogan-title {
@@ -436,17 +440,20 @@ img {
   justify-content: center;
 }
 
-.partner-link:hover,
+/* .partner-link:hover,
 :focus {
   border-color: var(--gray-blue);
-}
+} */
 
 .partner-icon {
   fill: var(--border-color);
 }
 
+.partner-link:hover,
+.partner-link:focus,
 .partner-link:hover .partner-icon,
 .partner-link:focus .partner-icon {
+  border-color: var(--gray-blue);
   fill: var(--gray-blue);
 }
 
@@ -613,7 +620,7 @@ img {
 }
 
 .portfolio-link:hover,
-:focus {
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
